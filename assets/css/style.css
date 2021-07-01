@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+div.card {
+    background: rgb(17,17,17);
+    background: linear-gradient(0deg, rgba(17,17,17,1) 0%, rgba(73,73,73,1) 100%);
+    width: 11rem;
+    height: 12rem;
+    padding: 1rem;
+    font-weight: 800;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+div.form-group {
+    margin: 0;
+}
+
+label.hex-hash {
+    font-size: 1.5rem;
+}
+
+.block-container {
+        position: relative;
+        margin-top: 6rem;
+}
+ 
+.block {
+    width: 10rem;
+    height: 10rem;
+    background-color:rgb(196, 70, 70);
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+@media (min-width:250px) and (max-width:600px) {
+    div.cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        
+    }
+
+    div.card {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width:601px) and (max-width:989px) {
+    div.cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        
+    }
+    
+    div.card {
+        width: 10rem;
+        height: 12rem;
+        
+    }
+
+    div.card:nth-child(5), div.card:nth-child(6), div.card:nth-child(7) {
+        margin-top: 1rem;
+        
+    }
+}
